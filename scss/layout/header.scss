@@ -1,0 +1,9 @@
+*{background-color: $primary_color;}
+.bcR {background-color:$primary_color ;}
+header {
+	grid-area: header;
+	text-align: right;	
+}
+nav ul li {
+    list-style-type: none;
+}	

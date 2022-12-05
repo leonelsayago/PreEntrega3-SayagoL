@@ -1,0 +1,62 @@
+//DESKTOP INDEX
+.indexG {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+     grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+	"header header"
+	"main main"
+	"footer footer";
+}
+	header {
+		grid-area: header;
+		text-align: right;	
+	}
+	main{
+		grid-area: main;
+	}	
+	footer {grid-area: footer}
+
+	            // MOBILE INDEX
+@media only screen and (max-width:768px){
+	.indexG {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		 grid-template-rows: repeat(3, auto);
+		grid-template-areas: 
+		"header header"
+		" main main"
+		"footer footer"
+		;
+	}
+	header{
+		grid-area: header;	
+	}
+	main{
+		grid-area: main;
+	}
+	footer{
+		grid-area: footer;
+	}
+}
+//Mobile Servicios
+@media only screen and (max-width:768px){
+.servicioG {
+display: grid;
+grid-template-rows: repeat(3, auto);
+grid-template-areas: 
+"header header"
+"section section"
+"footer footer"
+;
+}       
+header {
+grid-area: header;
+}
+section {
+grid-area: section;	
+}
+footer{
+grid-area: footer;
+}
+}

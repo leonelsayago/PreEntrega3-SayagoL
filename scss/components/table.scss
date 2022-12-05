@@ -1,0 +1,34 @@
+.center {
+    display: flex;
+    justify-content: center;
+    }
+    $vista:mobile;
+body{
+	@if $vista == mobile {
+		@media only screen and (max-width:768px) {
+            section div p{
+                font-size: 13px;
+                font-family: fantasy;
+            }
+            div h2 {
+                text-align: center;
+                font-size: 25px;
+                padding: 5px;
+            }
+            .carousel-inner {
+                height: auto;
+                width: 100%;
+                margin-left: unset !important;
+            }
+            table {
+                justify-content: center;
+            }
+            table tr th{
+                font-size: 15px;
+            }
+            table tr td{
+                font-size: 13px;
+            }
+        }
+    }
+}

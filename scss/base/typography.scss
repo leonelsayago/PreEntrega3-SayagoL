@@ -1,0 +1,24 @@
+p {
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;		
+	background-image: linear-gradient(to left, red,green);
+}
+h1 { 
+    text-align: center;
+ }
+h2 {
+	font-size: 35px;
+	text-align: center;
+}
+$vista:mobile;
+body{
+	@if $vista == mobile {
+		@media only screen and (max-width:768px) {
+p{
+	font-size: 15px;
+	font-family: fantasy;
+}
+		}
+	}
+}
